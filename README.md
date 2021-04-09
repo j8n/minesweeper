@@ -5,10 +5,10 @@ This is one of my first projects I made for learning purposes, originally develo
 Although it is a simple minesweeper game, with this you can learn and understand basic concepts of programming and game design!
 
 You can learn about:
-• Dynamic HTML elements generation (the game graphics are actually HTML Buttons 😀)
-• Path-finding algorithms (function for opening tiles with no mines have some similarities!)
-• Game mechanics
-• Web development
+* Dynamic HTML elements generation (the game graphics are actually HTML Buttons 😀)
+* Path-finding algorithms (function for opening tiles with no mines have some similarities!)
+* Game mechanics
+* Web development
 and more!
 
 I thought that maybe this will help someone that is currently a beginner in programming, so this is it!
