@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*******************
+	body
+*******************/
+body {
+	overflow: hidden;
+}
+
+/*******************
+	box debug
+*******************/
+#box-debug {
+	position: fixed;
+	left: 0;
+	top: 0;
+	margin: 5px;
+}
+
+/*******************
+	debug
+*******************/
+#debug {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 5px;
+}
+
+/*******************
+	main
+*******************/
+#main {
+	position: relative;
+	padding: 5px 50px;
+}
+
+/*******************
+	new game
+*******************/
+#new-game {
+	position: relative;
+	right: 0;
+	top: 0;
+	left: 0;
+	margin: 0px;
+	text-align: center;
+	height: auto;
+	padding: 1px;
+
+}#new-game-button {
+	position: relative;
+	width: 150px;
+	margin: 0 auto;
+	margin: 4px;
+	padding: 0 10px;
+	border: 1.5px solid #e0e0e0;
+	color: #606060;
+	background-color: #d0d0d0;
+
+}#new-game-button:hover {
+	background-color: #e0e0e0;
+
+}#new-game-button:active {
+
+}
+
+/*******************
+	game
+*******************/
+#game {
+	position: relative;
+	font-size: 0px;
+	color: #303030;
+	margin: 10px 0 0 0;
+
+}#mines {
+	font-size: 14px;
+	margin: 0 4px;
+
+}#flags {
+	font-size: 14px;
+	margin: 0 4px;
+}#time {
+	font-size: 14px;
+	margin: 0 4px;
+}
+
+/*******************
+	game container
+*******************/
+#game-container {
+	text-align: center;
+	margin: 0px auto;
+	position: relative;
+}
+
+/*******************
+	message
+*******************/
+#message {
+	position: relative;
+	margin: 4px;
+	text-align: center;
+}
+
+/*******************
+	bottom bar
+*******************/
+#bottom-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+}
+
+/*******************
+	how to content
+*******************/
+#how-to-content {
+	visibility: hidden;
+	text-align: center;
+	color: #303030;
+	font-size: 13px;
+}
+
+/*******************
+	icons
+*******************/
+.icon {
+	display: inline-block;
+	font-size: 22px;
+	margin: 1px 6px;
+	cursor: pointer;
+}.icon i{
+	color: #909090;
+}.icon i:hover {
+	color: #707070;
+}
+
+/*******************
+	buttons
+*******************/
+.buttons {
+	border: 1.5px solid #909090;
+	padding: 10px 25px;
+	cursor: pointer;
+}.buttons:hover {
+	background-color: #909090;
+	color: #ffffff;
+}
+
+.icon-buttons {
+	margin: 5px;
+	background-color: #a0a0a0;
+	width: 25px;
+	height: 25px;
+}.icon-buttons i {
+	color: #ffffff;
+	font-size: 11px;
+}
+
+/*******************
+	share buttons
+*******************/
+.share-buttons {
+	text-decoration: none;
+	font-size: 12px;
+}
+
+/*******************
+	display none
+*******************/
+.dn {
+	display: none;
+}

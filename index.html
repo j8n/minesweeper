@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Minesweeper</title>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Source -->
+	<script type="text/javascript" src="src.js"></script>
+
+</head>
+<body>
+
+	<div id="box-debug"></div>
+	<div id="debug"></div>
+	<div id="main" style="text-align: center;">
+		<div id="new-game">
+			<span>
+				<select id="select" style="margin: 4px;">
+					<option selected value="1">Easy</option>
+					<option value="2">Intermediate</option>
+					<option value="3">Expert</option>
+				</select>
+			</span>
+			<br>
+			<span id="new-game-button" class="buttons">New Game</span><br>
+			<div id="game">
+				<span style="font-size: 10px;margin: 0 10px;">
+					<img width="10" height="10" src="sun.png" style="margin-right: -5px;">
+					<span id="mines"></span>
+				</span>
+				<span style="font-size: 10px;margin: 0 10px;"><i class="fa fa-flag-o" aria-hidden="true"></i><span id="flags"> </span></span>
+				<span style="font-size: 10px;margin: 0 10px;"><i class="fa fa-clock-o" aria-hidden="true"></i><span id="time"> </span></span>
+			</div>
+		</div>
+		<div id="game-container"></div>
+		<div style="text-align: center; width: 225px; display: inline-block;position: relative;left: 0;right: 0; margin: 2px 0 0 0;">
+			<a id="pointer-button" class=""><i id="pointer-button-i" class="fa fa-mouse-pointer fa-fw" aria-hidden="true"></i></a>
+			<a id="flag-button" class=""><i id="flag-button-i" class="fa fa-flag fa-fw" aria-hidden="true"></i></a>
+		</div>
+		<div id="message"></div>
+	</div>
+	<div id="bottom-bar">
+		<table width="100%">
+			<tr>
+				<td id="how-to-icon">
+					<div class="icon">
+						<i class="fa fa-info" aria-hidden="true"></i>
+					</div>
+				</td>
+				<td id="how-to-content">
+					Left click on a square to reveal it's content. Numbers show how many mines exist around of the square. Right click to flag a square as a mine. Win by putting a flag on all mines!
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script type="text/javascript">
+		
+
+		window.onload = function(){
+			var i = document.getElementById('how-to-icon');
+			var c = document.getElementById('how-to-content');
+			var opened = false;
+
+			i.onclick = function(){
+				if(opened){
+					opened = false;
+					c.style.visibility = "hidden";
+				}else{
+					opened = true;
+					c.style.visibility = "visible";
+				}
+			}
+		
+
+			MS.newGame();
+		};
+	</script>
+
+</body>
+</html>
