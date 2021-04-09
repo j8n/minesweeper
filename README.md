@@ -11,9 +11,9 @@ You can learn about:
 * Web development
 and more!
 
-I thought that maybe this will help someone that is currently a beginner in programming, so this is it!
-
+I thought that maybe this will help someone that is currently a beginner in programming, so this is it! 
 You can play the game (and score!) or see the code to have a look of how it is made!
+
 
 If you have some comments or questions feel free to reach me, I would be very glad to discuss with you!
 
